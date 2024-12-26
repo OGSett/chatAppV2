@@ -1,0 +1,303 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding: 0;
+  /* height: 100vh; */
+  /* width: 100vh; */
+  background-image: url(../public/images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.holder {
+  background-color: rgb(43, 159, 226);
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+.navWrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 10px 0 10px 0;
+  /* height: 110px; */
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  background-color: #94c3e23f;
+  /* background-color: #666; */
+}
+
+.homewrapper {
+  display: flex;
+  height: 100vh;
+  /* width: 100%; */
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoholder img {
+  width: 64px;
+}
+.logoholder  {
+  margin-left: 20px;
+  height: 64px;
+}
+
+.btnNavHolder {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btnNavHolder button {
+  height: 60px;
+  width: 120px;
+}
+.sent {
+  display: flex;
+  justify-content: flex-end;
+}
+.recieved {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.msgHolder {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+
+/* Room List Container */
+.r {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 70vh;
+  background-color: #f5f5f5;
+}
+
+.loginWrapper {
+  background-color: rgba(168, 199, 218, 0.308);
+  border-radius: 15px;
+  width: max-content;
+  justify-self: center;
+  padding: 10px;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.extrafeatherlogin {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+.extrafeatherlogin a{
+  text-decoration: none;
+}
+.roomsWrapper {
+  width: 90%;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Room Card */
+.room-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.room-card:hover {
+  transform: scale(1.02);
+}
+
+/* Room Info */
+.room-info {
+  text-align: left;
+}
+
+.room-name {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0;
+}
+
+
+
+.room-participants {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+
+.homeAfterLg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  gap: 5%;
+}
+.tester {
+ /* margin: auto; */
+}
+
+/* Join Button */
+.join-button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.join-button:hover {
+  background-color: #45a049;
+}
+
+
+form {
+  /* background-color: rgba(255, 255, 255, 0.9);  */
+  padding: 30px;
+  border-radius: 10px;
+  /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); */
+  width: 300px;
+  max-width: 90%;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+/* Form Elements */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #34495e;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Button */
+button {
+  background-color: #3498db;
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.userRouting {
+  display: flex;
+  align-items: self-start;
+  padding-left: 10px;
+  justify-content: center;
+  gap: 5px;
+  flex-direction: column;
+  background-color: #f5f6f7b9;
+  width: 7%;
+  height: 8rem;
+  position: absolute;
+  top: 6rem;
+  right: 19.5rem;
+  border-radius: 8px;
+}
+
+.userLinkis {
+  text-decoration: none;
+}
+.userLinkis:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.logoholder img:hover {
+  cursor: pointer;
+}
+
+.LoginPage {
+  display: grid;
+  flex-direction: column;
+
+  height: 100vh;
+}
+
+.d {
+  display: flex;
+  align-self: center;
+  width: 40px;
+  height: 40px;
+  color: #333;
+}
+
+.d:hover {
+  cursor: pointer;
+}
+
+.ddd {
+  display: flex;
+  align-self: center;
+}
