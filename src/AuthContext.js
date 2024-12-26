@@ -31,12 +31,12 @@ export const AuthProvider = ({ children }) => {
             }
 
             try {
-                const response = await axios.get("http://localhost:5000/api/users/user-info", {
+                const response = await axios.get("https://chatappbackend-kozz.onrender.com/api/users/user-info", {
                     headers: { "x-auth-token": token },
                 });
                 setUser(response.data.user);
 
-                const newSocket = io("http://localhost:5000", { auth: { token } });
+                const newSocket = io("https://chatappbackend-kozz.onrender.com", { auth: { token } });
                 setSocket(newSocket);
             } catch (error) {
                 if (error.response?.status === 401) {
