@@ -15,7 +15,7 @@ function App() {
 
     useEffect(() => {
         if (token) {
-            const newSocket = io('https://chatappbackend-kozz.onrender.com/', { auth: { token } });
+            const newSocket = io('https://chatappbackend-kozz.onrender.com', { auth: { token } });
             setSocket(newSocket);
 
             newSocket.on('connect_error', (error) => {
